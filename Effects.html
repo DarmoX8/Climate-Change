@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Effects of Climate Change</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Favicon.png" type="image/png">
+    <script defer src="script.js"></script>
+    <style>
+        li{margin-bottom: 30px;}
+        #content h2{display: inline;background: rgb(52, 228, 52);}
+        li::marker{font-size: 30px;}
+    </style>
+</head>
+
+<body>
+    <div id="SearchResult">
+        <div>
+            <h3>Search result of "<span id="input"></span>". Click on it to go to the page.</h3>
+            <h3 id="Result"></h3>
+            <button class="btn" id="SearchButton" onclick="Close()">Go Back</button>
+        </div>
+    </div>
+    <input type="checkbox" id="input_toggle">
+    <label for="input_toggle" id="toggler"><img src="Images/Navigator.png" draggable="false" alt="Navigation Bar Toggler"></label>
+    <nav>
+        <div id="brand">
+            <img src="Images/Logo.gif" id="navbar-img" draggable="false" alt="Earth Logo Gif">
+            <a id="header" href="index.html">Home</a>
+        </div>
+        <!-- DT stands for Dropdown Toggler -->
+        <input type="checkbox" id="Input_DT">
+        <label for="Input_DT" id="DT">More About Climate Change <span id="triangle"></span></label>
+        <div id="dropdown">
+            <a href="Causes.html" class="dropdown_item">Causes</a>
+            <a href="Effects.html" class="dropdown_item">Effects</a>
+            <a href="Greenhouse_Effect.html" class="dropdown_item">Greenhouse Effect</a>
+            <a href="Global_Warming.html" class="dropdown_item">Global Warming</a>
+        </div>
+        <a href="Solutions.html">Solutions for Climate Change</a>
+        <a href="About_Us.html">About Us</a>
+        <form>
+            <input type="search" placeholder="Search Here" id="searchbar">
+            <button class="btn" onclick="search(event)">Search</button>
+        </form>
+    </nav>
+    <div id="slider">
+        <div id="slides">
+            <!-- Buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- Slide Images -->
+            <div class="slide first"><img src="Images/Banner/Banner1.png" alt="Climate Change" id="image" draggable="false"></div>
+            <div class="slide"><img src="Images/Banner/Banner2.png" alt="Earth on a hand" draggable="false"></div>
+            <div class="slide"><img src="Images/Banner/Banner3.png" alt="Global Warming" draggable="false"></div>
+            <div class="slide"><img src="Images/Banner/Banner4.png" alt="Posters on Climate Change" draggable="false"></div>
+            <!-- Automatic Navigation -->
+            <div class="navigation-auto">
+                <div id="auto-btn1"></div>
+                <div id="auto-btn2"></div>
+                <div id="auto-btn3"></div>
+                <div id="auto-btn4"></div>
+            </div>
+            <!-- Manual Navigation -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn" onclick="reset_timer()"></label>
+                <label for="radio2" class="manual-btn" onclick="reset_timer()"></label>
+                <label for="radio3" class="manual-btn" onclick="reset_timer()"></label>
+                <label for="radio4" class="manual-btn" onclick="reset_timer()"></label>
+            </div>
+            <!-- Arrow Navigation -->
+            <div class="arrows">
+                <button class="Left_Arrow" onclick="Slide(-1)"></button>
+                <button class="Left_Arrow" onclick="Slide(-1)"></button>
+                <button class="Right_Arrow" onclick="Slide(1)"></button>
+                <button class="Right_Arrow" onclick="Slide(1)"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="content">
+        <h1><span>Effects of Climate Change</span></h1>
+        <p>Climate change is one of the most pressing global challenges of our time, and its effects are becoming increasingly evident. From rising temperatures and sea levels to more frequent and severe extreme weather events, the consequences of climate change are far-reaching, impacting ecosystems, economies, and human societies worldwide. Here are 5 effects on climate change:</p>
+        <ol>
+            <li><h2>Rising Temperatures:</h2>A rising temperature typically refers to an increase in the average global or local temperature over time. Increased global temperatures lead to more frequent and severe heatwaves, which can have detrimental effects on human health, agriculture, and ecosystems.Rising temperatures can also cause the melting of glaciers and polar ice caps, contributing to rising sea levels.</li>
+            <img src="Images/Content/Rising Temperature.webp" alt="Rising Temperatures">
+
+            <li><h2>Sea-Level Rise:</h2>Sea level rise refers to the gradual increase in the average height of the Earth's ocean surfaces over time. As global temperatures rise, glaciers and ice caps melt, and seawater expands due to increased temperatures, causing sea levels to rise. This can lead to coastal erosion, saltwater intrusion into freshwater sources, and increased coastal flooding.</li>
+            <img src="Images/Content/Sea-Level Rise.jpg" alt="Sea-Level Rise in Cities">
+
+            <li><h2>Water Resources:</h2>Water resources refer to the supply of water available for various purposes, including domestic, agricultural, industrial, and environmental uses. About 97% of the water on the Earth is mainly salt water and only around 3% is fresh water. Approximately around two thirds of this is frozen in glaciers and polar ice caps. Altered precipitation patterns can affect the availability of freshwater resources, leading to water scarcity in some regions and increased competition for water resources.</li>
+
+            <li><h2>Extreme Weather Events:</h2>Extreme weather events refer to unusual and severe weather occurrences that deviate significantly from typical local climate conditions. These events can include intense hurricanes, prolonged droughts, heavy rainfall leading to floods, and wildfires. They often result from complex interactions within the Earth's climate system and can have significant social, economic, and environmental impacts, posing challenges for disaster preparedness and response.</li>
+            <img src="Images/Content/Natural Disasters.jpg" alt="Natural Disasters">
+
+            <li><h2>Agricultural Problems:</h2>The main problems facing agriculture are usually land-related. Loss of viable land, erosion, and other factors decrease the ability of farmers to use land. Changes in temperature and precipitation can impact crop yields and reduce agricultural productivity. This can lead to food shortages and increased food prices, affecting global food security.</li>
+            <img src="Images/Content/Agricultural Problems.png" alt="Agricultural Problems">
+        </ol>
+
+    </div>
+
+    <footer>&copy; Copyright 2023 - Climate Change - Created by Devesh, Ishan and Shrivardhan</footer>
+
+</body>
+</html>
