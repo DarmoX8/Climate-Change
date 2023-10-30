@@ -187,7 +187,7 @@ input{display: none;}
     margin: 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    translate: 106px -103px;
+    transform: translate(106px, -103px);
     z-index: -1;
     overflow: hidden;
 }
@@ -375,7 +375,7 @@ nav>a:hover,nav>label:hover,#header:hover{
     cursor: pointer;
     border: solid white;
     padding: 8px;
-    rotate: 45deg;
+    transform: rotate(45deg);
     background-color: transparent;
     opacity: 0.5;
     transition: 0.7s;
@@ -389,16 +389,16 @@ nav>a:hover,nav>label:hover,#header:hover{
     to {height: 193px;}
 }
 @keyframes ToggleDropdown{
-    from {translate: 119px -97px;}
-    to {translate: 119px 43px;}
+    from {transform: translate(119px, -97px);}
+    to {transform: translate(119px, 43px);}
 }
 @keyframes ToggleDropdown2{
-    from {translate: 106px -97px;}
-    to {translate: 106px 39px;}
+    from {transform: translate(106px, -97px);}
+    to {transform: translate(106px, 39px);}
 }
 @keyframes ToggleDropdown3{
-    from {translate: 215px -97px;}
-    to {translate: 215px 38px;}
+    from {transform: translate(215px, -97px);}
+    to {transform: translate(215px, 38px);}
 }
 @keyframes ToggleDropdown4{
     from {height: 0;}
@@ -455,7 +455,7 @@ nav>a:hover,nav>label:hover,#header:hover{
     }
     @media (width <= 371px){
         #input_toggle:checked ~ nav > #Input_DT:checked ~ #dropdown{
-            translate: 3px 185px;
+            transform: translate(3px, 185px);
             animation: ToggleDropdown4 0.8s forwards;
         }
     }
